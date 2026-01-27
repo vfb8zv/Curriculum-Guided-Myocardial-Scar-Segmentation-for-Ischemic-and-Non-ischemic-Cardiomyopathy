@@ -1,0 +1,1 @@
+# Curriculum-Guided-Myocardial-Scar-Segmentation-for-Ischemic-and-Non-ischemic-Cardiomyopathy
