@@ -9,3 +9,37 @@ Identification and quantification of myocardial scar is important for diagnosis 
 ![Curriculum-guided training framework for LGE segmentation, using an arbitrary segmentation backbone, integrating
 implicit and explicit difficulty-aware labels](arch_CL_github.jpg)
 
+### Data Structure
+
+dataset
+----train
+--------0
+------------subject1_raw_1.pt
+------------subject1_lge_1.pt
+------------subject1_raw_2.pt
+------------subject1_lge_2.pt
+------------subject1_raw_3.pt
+------------subject1_lge_3.pt
+------------subject2_raw_1.pt
+------------subject2_lge_1.pt
+------------subject2_raw_2.pt
+------------subject2_lge_2.pt
+...
+------------subjectn_raw_m.pt
+------------subjectn_lge_m.pt
+--------1
+--------2
+----test
+
+
+### Training 
+
+Run the following command to train the segmentation backbone for different stages. Set the --model_type to the backbone's name and --stage to the data folder corresponding to each curriculum stage.
+
+        python train.py
+
+### Testing 
+
+Run the following command to obtain the predictions, dice score and error in scar burden.
+
+        python test.py
