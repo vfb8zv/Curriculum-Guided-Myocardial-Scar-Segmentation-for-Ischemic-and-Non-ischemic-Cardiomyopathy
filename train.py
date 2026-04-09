@@ -198,6 +198,9 @@ def model_main(args):
 
     os.makedirs(f'./results/models_{loss_type}_{args.model_type}/', exist_ok=True)
 
+    # model.load_state_dict(torch.load(f'./results/models_{loss_type}_{args.model_type}/'+model_save_path, map_location=DEVICE))  ## load weights from previous stage.
+
+
     model.train()
     optimizer = torch.optim.Adam(model.parameters(), weight_decay= 1e-14, lr=1e-3)
 
