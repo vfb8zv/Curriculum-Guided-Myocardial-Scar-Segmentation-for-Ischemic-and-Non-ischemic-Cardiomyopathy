@@ -9,28 +9,31 @@ Identification and quantification of myocardial scar is important for diagnosis 
 ![Curriculum-guided training framework for LGE segmentation, using an arbitrary segmentation backbone, integrating
 implicit and explicit difficulty-aware labels](arch_CL_github.jpg)
 
-### Data Structure
+### Data Folder Structure
 
-dataset
-----train
---------0
-------------subject1_raw_1.pt
-------------subject1_lge_1.pt
-------------subject1_raw_2.pt
-------------subject1_lge_2.pt
-------------subject1_raw_3.pt
-------------subject1_lge_3.pt
-------------subject2_raw_1.pt
-------------subject2_lge_1.pt
-------------subject2_raw_2.pt
-------------subject2_lge_2.pt
-...
-------------subjectn_raw_m.pt
-------------subjectn_lge_m.pt
---------1
---------2
-----test
-
+```text
+dataset/
+├── train/
+│   ├── 0/
+│   │   ├── subject1_raw_1.pt
+│   │   ├── subject1_lge_1.pt
+│   │   ├── subject1_raw_2.pt
+│   │   ├── subject1_lge_2.pt
+│   │   ├── subject1_raw_3.pt
+│   │   ├── subject1_lge_3.pt
+│   │   ├── subject2_raw_1.pt
+│   │   ├── subject2_lge_1.pt
+│   │   ├── subject2_raw_2.pt
+│   │   ├── subject2_lge_2.pt
+│   │   ├── subjectn_raw_m.pt
+│   │   └── subjectn_lge_m.pt
+│   ├── 1/
+│   └── 2/
+└── test/
+    ├── 0/
+    ├── 1/
+    └── 2/
+```
 
 ### Training 
 
